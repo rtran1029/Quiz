@@ -16,7 +16,7 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     color: rebeccapurple;
     margin-bottom: 5rem;
   }
@@ -38,6 +38,7 @@ h1 {
   }
 
   .container {
+      padding: 1.5rem;
       width: 100vw;
       height: 100vh;
       display: flex;
@@ -92,10 +93,4 @@ h1 {
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
-  
-  /* .btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-  } */
 

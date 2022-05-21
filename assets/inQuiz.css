@@ -8,6 +8,20 @@
     border-radius: 15px;
 }
 
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
 .option-letter {
   padding: 1.5rem 2.5rem;
   background-color: thistle;
@@ -26,3 +40,22 @@
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
+
+  .correct {
+    /* background-color: green; */
+    box-shadow: 0px 5px 10px 0px green;
+  }
+
+  .correct:hover {
+    box-shadow: 0px 5px 10px 0px green;
+  }
+
+  .incorrect {
+    /* background-color: green; */
+    box-shadow: 0px 5px 10px 0px red;
+  }
+
+  .incorrect:hover {
+    box-shadow: 0px 5px 10px 0px red;
+  }
+
