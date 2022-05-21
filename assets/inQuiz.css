@@ -1,0 +1,28 @@
+.options-container {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid rebeccapurple;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.option-letter {
+  padding: 1.5rem 2.5rem;
+  background-color: thistle;
+  border-radius: 15px 0 0 15px;
+
+}
+
+.option-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.options-container:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 20px 0 thistle;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
