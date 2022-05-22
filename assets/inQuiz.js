@@ -73,7 +73,7 @@ startGame = () => {
 
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        return window.location.assign('/end.html');
+        return window.location.assign('gameOver.html');
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
