@@ -110,7 +110,7 @@ let questions = [
 
 const CORRECT_BONUS = 10
 const MAX_QUESTIONS = 12
-var secondsLeft = 60
+var secondsLeft = 10
 ;
 var timeEl = document.getElementById("Timer");
 
@@ -139,7 +139,7 @@ startGame = () => {
 
 
 getNewQuestion = () => {
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS || secondsLeft === 0) {
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS || secondsLeft <= 0) {
         localStorage.setItem('mostRecentScore', score);
         return window.location.assign('gameOver.html');
     }
