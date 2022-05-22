@@ -6,3 +6,4 @@ highScoresList.innerHTML = highScores
     return `<li class="high-score">${score.name} - ${score.score}</li>`;
     })
     .join("");
+// CANT figure out why the score is just being replaced

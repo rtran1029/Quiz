@@ -5,8 +5,9 @@
 * Practiced JS skills to make a dynamic quiz
 * Used event listeners , local storage, intervals, and much more to meet criteria 
 * Quiz iterates through an array of questions to give random hard coded questions
-* Used eventListeners to react to a button click to start the program
-* Created validation systems that make the user use 8-128 characters and choose at least one set of character options
+* Game will end when time runs out or if player runs out of questions
+* scores are set to local storage and retrieved for numerous reasons through the app
+* 
 
 ---
 
