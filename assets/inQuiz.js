@@ -58,10 +58,58 @@ let questions = [
         option4: "460 kg",
         answer: 4,
     },
+    {
+        question: "What is the colour of Raichu’s cheeks?",
+        option1: 'Yellow',
+        option2: 'Red',
+        option3: 'Brown',
+        option4: 'Pink',
+        answer: 1,
+    },
+    {
+        question: "Which type of Pokemon is Gyarados?",
+        option1: "Water and dark",
+        option2: "Water and grass",
+        option3: "Water and flying",
+        option4: "Dragon and Dark",
+        answer: 3,
+    },
+    {
+        question: "What is the first version of Pokemon video games released in 1996?",
+        option1: "Pokemon Gold and Silver",
+        option2: "Pokemon Red and Green",
+        option3: "Pokemon Red and Blue",
+        option4: "Pokemon Green and Yellow",
+        answer: 2,
+    },
+    {
+        question: "What is the most common type of Pokemon?",
+        option1: 'Fire',
+        option2: 'Water',
+        option3: 'Grass',
+        option4: 'Flying',
+        answer: 2,
+    },
+    {
+        question: "Which is the oldest Pokemon in the game universe?",
+        option1: "Mewtwo",
+        option2: "Meowth",
+        option3: "Arceus",
+        option4: "Kabuto",
+        answer: 3,
+    },
+    {
+        question: "what pokemon is this listed #151",
+        option1: "Mew",
+        option2: "Dragonite",
+        option3: "Charmander",
+        option4: "Mewtwo",
+        answer: 1,
+    },
 ];
 
 const CORRECT_BONUS = 10
-const MAX_QUESTIONS = 6
+const MAX_QUESTIONS = 12
 
 
 startGame = () => {
@@ -115,7 +163,7 @@ options.forEach((option) => {
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
             getNewQuestion();
-          }, 1500);
+          }, 900);
 
     });
 });
