@@ -59,7 +59,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: "What is the colour of Raichu’s cheeks?",
+        question: "What is the colour of Raichu`s cheeks?",
         option1: 'Yellow',
         option2: 'Red',
         option3: 'Brown',
@@ -110,17 +110,36 @@ let questions = [
 
 const CORRECT_BONUS = 10
 const MAX_QUESTIONS = 12
+var secondsLeft = 60
+;
+var timeEl = document.getElementById("Timer");
 
+function setTime() {
+    // Sets interval in variable
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      timeEl.textContent = secondsLeft;
+  
+      if(secondsLeft === 0) {
+        // Stops execution of action at set interval
+        clearInterval(timerInterval);
+      }
+  
+    }, 1000);
+  }
 
 startGame = () => {
+    setTime()
     score = 0;
     availableQuesions = [...questions];
     getNewQuestion();
     console.log(length.availableQuestions)
 };
 
+
+
 getNewQuestion = () => {
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS || secondsLeft === 0) {
         localStorage.setItem('mostRecentScore', score);
         return window.location.assign('gameOver.html');
     }
@@ -156,9 +175,17 @@ options.forEach((option) => {
 
         selectedOption.parentElement.classList.add(classToApply);
 
+        // if (currentQuestion == "incorrect") {
+        //     secondsLeft -= 5
+        // }
+
+
+    // IF/ELSE STATEMENT TO ADD POINTS AND REMOVE REMAINING TIME
         if (classToApply === "correct") {
             incrementScore(CORRECT_BONUS);
-          }
+        } else {
+               secondsLeft = secondsLeft-5
+           }
 
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
