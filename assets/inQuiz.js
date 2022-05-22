@@ -110,7 +110,7 @@ let questions = [
 
 const CORRECT_BONUS = 10
 const MAX_QUESTIONS = 12
-var secondsLeft = 10
+var secondsLeft = 61
 ;
 var timeEl = document.getElementById("Timer");
 
