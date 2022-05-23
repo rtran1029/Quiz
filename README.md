@@ -9,6 +9,10 @@
 * scores are set to local storage and retrieved for numerous reasons through the app
 * https://rtran1029.github.io/Quiz/
 
+* can't get it to work on github but it works on VSCODE not sure if this helps for grading if i can't get it to work in the end.
+
+https://drive.google.com/file/d/1VUzNW5VJjyiUS6sOwF_lueRbCa4W-gb2/view
+
 ---
 
 # Site URL Running Screenshot #
