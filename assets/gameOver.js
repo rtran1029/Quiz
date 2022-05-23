@@ -16,9 +16,9 @@ saveHighScore = (e) => {
         score: mostRecentScore,
         name : userINT.value
     };
-    console.log(highScores);
+    // console.log(highScores);
     highScores.push(score)
 
     localStorage.setItem('highscores', JSON.stringify(highScores));
-    window.location.assign("/");
+    window.location.assign("./index.html");
 }
