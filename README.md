@@ -7,7 +7,8 @@
 * Quiz iterates through an array of questions to give random hard coded questions
 * Game will end when time runs out or if player runs out of questions
 * scores are set to local storage and retrieved for numerous reasons through the app
-* 
+* https://rtran1029.github.io/Quiz/
+* ^^^ everything works beautifully in VScode but not on github pages for some reason
 
 ---
 
